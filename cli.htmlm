@@ -1,0 +1,50 @@
+command line interface is one of the many interfaces where we get to interact with computers 
+what we mostly use is a GUI (GRAOHICAL USER INTERFACE)>>WHICH DEPITS
+ user interactions as graphics (folders,files,icons ,websites)
+ we have pther types of interfaces {
+    GUI
+    cli>>this is an interface that mostly deals with memorizing commands 
+    to interact with computers at a lower level through a terminal 
+    it is one of the essential s skills needed to be a computer 
+    engineer and sfotware engineer/cybersecurity 
+    advantages{>>when you are proficient with the skill
+        execution speed is faster
+        safer 
+        allows remote access and file sharing through ip addresses 
+
+    }
+    examples of terminals that are used to interact with the computer {
+        terminal>>linux distro and Mac Os
+        powershell>>windows 
+        bash/git bash>>cross platform 
+        command prompt>>strict to windows commands
+    }
+using cli always remember the path that youj are using {
+    types of paths{
+        relative path>>this refers to the path of the immediate child inside a folder
+        absolute >> refers to a path from the root directory (users)
+        /home/peter/Documents/fullstackJuly/recipe 
+    }
+}
+    
+ }
+ commands used {
+    pwd>>print working directory >>print the current folder the user is in 
+    ls>lists files inside a folder{
+        ls -l>>prints files inclussive of their timestamp and to view permissions
+        ls -a>>prints the hidden files and contents
+    }
+    cd>>change directory from one folder to another (from documents to downloads ){
+        cd ..>>go back one step /previous directory
+        cd . >go into the current directory 
+ 
+    }
+    mkdir>>making a directory>>refers to creating a new folder in an absolute/relative path
+    rmdir>>remove directory>>deleting a folder >>only when you are outside it 
+    touch>>used to create new filesin a directory 
+    rm>>remove files in a diectory 
+    {
+      [command] [filename]
+      touch index.html
+    }
+ }

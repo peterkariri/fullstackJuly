@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border:10px dashed red;
+            border-radius: 15px;
+              border:5px dotted blue;
+        }
+       
+        .badge{
+            position: fixed;
+           display: none;
+           background-color: blue;
+           padding: 10px;
+           width: 20%;
+           top: 0;
+
+           
+        }
+        .class{
+           display: flex;
+           gap: 20px;
+           padding: 30px;
+           justify-content:space-around;
+            width: 100%;
+            background-color: yellow;
+        }
+        @media (max-width:360px) {
+            body{
+                background-color: aqua;
+            }
+             .badge{
+            position: fixed;
+           display: block;
+           background-color: blue;
+           padding: 10px;
+           width: 20%;
+           top: 0;
+
+           
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">TThis is a bordered box</div>
+
+    <div class="container">
+        <div class="badge">
+            I'm A positoned badge
+        </div>
+    </div>
+    <div class="class">
+        <span class="inline-box">class 1</span>
+                <span class="inline-box">class 2</span>
+
+        <span></span>
+    </div>
+</body>
+</html>

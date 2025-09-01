@@ -1,0 +1,29 @@
+/* animations :refers to motion givene to static objects to a dynamic effect in tht we give an illuson of motion
+keyframe ::this are elements that are used to control animations and they contains start  and end points 
+we use @keyframes to define the keyframes for the animation.which has and can be used in two ways {
+    using the from ......to keywords and using the relative format 1-100%
+    this transitions are used to changes css properties based on the keyframes defined and values provided by the 
+    values of the properties 
+    ie:we can change any property in the mix ,do transformations ,skewness ,scaling ,rotations ....
+}
+we have open surce animation libraries and freekits that contains already animated components 
+    eg:animista
+why we use animations :to make our applications interactive and engagine >>all falls under the ui/ux design */
+
+@keyframes example1"name of animation" {
+    from {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+    to {
+        background-color: yellow;
+        left: 200px;
+        top: 200px;
+    }
+}
+.box{
+    background-color: ;
+    position: relative;
+    animation: example1 2s ease-in-out infinite/linear;(animation name ,durtion, timing function, delay)
+}

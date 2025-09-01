@@ -1,0 +1,185 @@
+<!-- heading tags 
+there are six heading tags in html and they conform to the hierachical order that is the first heading tag is larger in font size 
+the second is smaller than the first and so on  
+
+but this is just the default styling which means you can change the tag size via css styling 
+where do we use heading tags >>when definine hero sections ,headings ,bulletings 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fullstack July</title>
+</head>
+<body>
+    <h1>my name is Peter</h1>
+    <h2>My name is Doreen</h2>
+    <h3>My name is Sheryl</h3>
+    <h4>My name is Derrick</h4>
+    <h5>My name is Rency</h5>
+    <h6>My name is Teddy</h6>
+    <h1>My name is Frida</h1>
+    <h4>My name is Faizal</h4>
+
+<!--     p tag>>this refers to the paragraph tag and it is used to hold more content than a heading tag or a descrption to a heading 
+ -->   
+<p>I am a software engineer with over six years of experience in building software and 15 years experience in ICT knowlegde 
+    . <br> I envision a kenya with ICT intergration level higher than the current
+     situation come 2030 ,lets work to address this issue , <br>together we can 
+</p>
+<!-- void tags >>void tags are tags that do not accept input to them ,thy include {
+    br >>it statically renders break point to sspecified location by theprogrammer 
+    hr >>puts a horizontal line acrross the specified location 
+    img >>inserts images 
+    input>>defined input in fomrs 
+    link links resources 
+    meta >>links resources //metadata 
+
+}
+ -->
+ 
+<!-- 
+    strikethrough tag >>this is used to put a line through a text  a static line 
+    <s>strikethrough</s>
+    u tag >>this is used to underline a text 
+    <u>underline</u>
+    b tag >>this is used to bold a text 
+    <b>bold</b>
+    strong tag >>this is used to emphasize a text 
+    <strong>emphasize</strong>
+    i tag >>this is used to italicize a text 
+    <i>italicize</i>
+    em tag >>this is used to emphasize a text 
+    <em>emphasize</em>   
+
+span tag >>this is an inline element that is used to style a part of the text in a paragraph or any other text 
+-->
+<span><strike>2000</strike> 1999</span>
+<u>i am writting html</u>
+<b>i am bold</b> <br>
+<strong>i am strong </strong> <br>
+<i>hello i am iitalic</i> <br>
+<em>hello i am emphasy</em>
+<!-- tags for today 
+ div 
+ lists
+ anchor 
+ img
+ iframe
+ video
+ -->
+<!--  divs as container tags that are used to hold and structure other tags 
+ -->
+<div>
+    <div>
+        <h1>my Portfolio</h1>
+    <p>My name is Peter and I am a software engineer with over six years of experience in building software and 15 years experience in ICT knowledge.</p>
+    </div>
+
+   <!--  the anchor tag>> (a)>> this is used to link to other resources or pages , it can also be used to link to a specific location in the same page 
+    a>>the a tag is used to define the anchor ,it is a void tag 
+    parts odf an anchor tag are{
+        href>>this refers to the refrence url or path to be linked 
+        <a href=""></a>
+        targets  of an anchor link{
+        we have various targets in anchor links namely:{
+        target blank>>opens a new tab 
+        target self:this reloads itself and renders new content 
+        target top::this goes back to the top first and then refreshes the webpage
+        target parent:this redirects back to the parent page or reloads itself if it is the parent 
+        where do we add the target attribute:we apply this attribute at the opening tag of an anchor link after the url
+        }
+        }
+    }  -->
+
+    <a href="https://internet.safaricom.co.ke/home" target="_top">Safaricom </a>
+    <!-- lists tags:list tags are used in listing content 
+    they are classified into two that is unordered lists and ordered lists
+    the ordered lists are sequentially arranged from 1.....last they follow a numeric ordering (ol)
+    the unorderd list follow an unordered structure which means they cannot be identified if reversed which is the first (ul)
+    they use dots 
+    but to define list items we introduce the <li> tag -->
+
+        <div>
+            <h1>recipe for banana smoothie</h1>
+            <ul>
+                <li>acquire bananas </li>
+                <li>peel the bananas </li>
+                <li>chop the bananas </li>
+                <li>add milk </li>
+                <li>add honey </li>
+                <li>blend until smooth </li>
+                <li>serve and enjoy </li>
+            </ul>
+        </div>
+
+         <div>
+            <h1>recipe for banana smoothie</h1>
+            <ol>
+                <li>acquire bananas </li>
+                <li>peel the bananas </li>
+                <li>chop the bananas </li>
+                <li>add milk </li>
+                <li>add honey </li>
+                <li>blend until smooth </li>
+                <li>serve and enjoy </li>
+            </ol>
+        </div>
+</div>
+<!-- img>>the image tag is used to embedd images in a webpage from either a local source or an online source 
+with the local source we use the src attribute to define the path to the image
+with the online source we use the src attribute to define the url to the image address
+breaking down the image tag{
+    img>>this is the tag used to define the image 
+    src>>this is the attribute used to define the source of the image 
+    alt>>this is the attribute used to define the alternative text for the image in case it fails to load 
+    width>>this is the attribute used to define the width of the image 
+    height>>this is the attribute used to define the height of the image 
+}
+-->
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ3oaaI5PPiHdCTvEwL6VeP4qM2XqI5NxX3A&s" alt="an Ai classroom with great views">
+
+<img src="/src/download (1).jpeg" alt="an ai technology classroom" width="800" height="500">
+
+assignment 
+
+create a div tag to contain a heading tag with two different recepies  one ordered and another unordered 
+for two vaiours meals 
+the structure should be a div ,an image of your food a heading tag ,an ul then li for recipe one 
+the structure should be a div ,an image of the food a heading tag ,an ol then li for recipe one 
+
+
+<!-- inline and block level element 
+inline level elements are elements that do not start on a new line and only take up as much width as necessary.
+ Examples include `<span>`, `<a>`, and `<img>` <i> </i> <br> <b></b> -->
+
+    <span style="background-color: red;padding: 20px;">hello there,todays     <div style="background-color: green;padding: 30px;">this is a block level element</div>
+class we will be dealing with alot of things </span>
+    <i>italic text</i>
+    <br>
+    <b>bold text</b>
+<!-- block level elements are elements that start on a new line and take up the full width available. -->
+    <p style="background-color: yellow;padding: 20px;">this is a paragraph</p>
+    nb:you cannever have an inline level element holding a block level element but you can have an inlne having an inline level element
+    or a block level element holding an inline level element as well as another block level element 
+
+semantic tags {
+    semantic tags are tags that have a meaning or purpose in the structure of the webpage
+    benefits of semantic tags {
+        they help in SEO optimization 
+        they help in accessibility 
+        they help in readability of the code 
+        they help in code reusability
+    }
+    <header></header>this holds the navigation components ,the logos and the media links to the website and other resources
+    <nav></nav>this holds the navigation links to the website and other resources
+    <main></main>this holds the dynamic content of the webpage
+    <article></article>sites content that is self contained and can be distributed independently which has meaning on its own
+    <section></section>this holds a thematic grouping of content such as when designing a webpage with different sections for a one pager website
+    <aside></aside>this holds content that is related to the main content and can aid in navigation or provide additional information
+    <footer></footer>this holds the footer content of the webpage(social media links to other resources as well)
+}
+
+</body>
+</html>

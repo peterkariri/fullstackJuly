@@ -1,0 +1,131 @@
+/* cascading stylesheet refrs to the syntax used to style HTML documents. It allows you to apply 
+styles to elements, such as colors, fonts, and layouts.
+/*we can use css in three ways which are inline, internal and external*/
+/* inline css refers to css that is used inline with the html tag>>we use the style attribute
+ to define inline css
+<p style="color: red;">This is an inline styled paragraph.</p>
+
+internal css refers to css that is used within the head of the html document>>we use the style 
+tag to define internal css
+external css which refers to creating a seperate css file and linking it using the css link 
+tag to html document 
+
+the most advised approach while using vanilla css is the external css approach as it allows 
+for better organization 
+and reusability of styles across multiple HTML documents.  */
+
+rules defining css {
+    there are three rules that define the use of css namely {
+        cascading:this refers to implementing an action line by line in a top-down approach
+        where the last rule defined takes precedence over the previous ones.
+        specificity:this refers to the weight or importance of a selector in determining which styles are applied.
+        inheritance:this refers to the way certain properties are passed down from parent elements to their children.
+
+    }
+}
+/* the css code block syntax: 
+selector{
+    property: value;
+    property>this refers to the component we want to style
+    value>this refers to the style we want to apply to the component
+} */
+selectors {
+    selectors are used to target specific HTML elements for styling. They can be simple or complex, 
+    and can include element names, classes, IDs, and attributes.
+    some common selectors include {
+        element selector: targets all instances of a specific HTML element (e.g., p, h1).not advised unless you want 
+        to give unique styles to specific contents (fonts)
+        class selector: targets elements with a specific class attribute (e.g., .class-name) whic is meade by having the class attribute at 
+        the starting tag of the target elements.It is defned by the dot syntax then the name of the class{
+            important facts aboiut the class selectoris that we can use the same class to target the many components 
+            and also have two or more classes targeting the same component
+        }
+        ID selector: targets a single element with a specific ID attribute (e.g., #id-name) by using the hash syntax 
+        and the id attribute at the beggining of the opening tag of the target element.;
+        attribute selector: targets elements based on their attributes (e.g., [type="text"]).Mostyl used to style forms 
+        universal selector: targets all elements on the page (*) but not advised as it can lead to performance issues.
+        pseudo-classes: targets elements based on their state (e.g., :hover, :focus). They are used to apply styles 
+        when an element is in a specific state, such as when a user hovers over a link or focuses on an input field.
+        
+    }
+}
+properties of css>>this referes to the properties used in the styling of html content 
+text properties{
+    color: sets the text color of an element.
+    font-family: specifies the font to be used for the text.
+    font-size: sets the size of the text.
+    font-weight: defines the thickness of the text (e.g., normal, bold).
+    line-height: controls the spacing between lines of text.
+    text-align: sets the horizontal alignment of text (e.g., left, center, right).
+    text-decoration: adds decoration to text (e.g., underline, overline, line-through).
+    letter-spacing: adjusts the spacing between characters in the text.
+    word-spacing: adjusts the spacing between words in the text.
+}
+background properties{
+    background-color: sets the background color of an element.
+    background-image: applies an image as the background of an element.
+    background-repeat: controls how the background image is repeated (e.g., repeat, no-repeat).
+    background-position: sets the position of the background image within the element.
+    background-size: defines the size of the background image (e.g., cover, contain).
+}
+box-model-properties{
+    width: sets the width of an element.
+    height: sets the height of an element.
+    padding: adds space inside the element, between the content and the border.
+    margin: adds space outside the element, between the border and surrounding elements.
+    border: defines the border around an element, including its width, style, and color.
+
+}
+
+padding>>this refers to the space between content and border {
+    padding-top: sets the top padding of an element.
+    padding-right: sets the right padding of an element.
+    padding-bottom: sets the bottom padding of an element.
+    padding-left: sets the left padding of an element.
+    to give a general padding overall we use the padding property alone{
+        padding: sets the padding for all four sides of an element (top, right, bottom, left).
+    }
+}
+margin>>this refers to the space between the border and surrounding elements {
+    margin-top: sets the top margin of an element.
+    margin-right: sets the right margin of an element.
+    margin-bottom: sets the bottom margin of an element.
+    margin-left: sets the left margin of an element.
+    to give a general margin overall we use the margin property alone{
+        margin: sets the margin for all four sides of an element (top, right, bottom, left).
+        margin:20px;||margin: 20px 10px; //20px for top and bottom, 10px for left and right
+    }
+}
+border>>this refers to the line that surrounds an element {
+    border-width: sets the width of the border.
+    border-style: defines the style of the border (e.g., solid, dashed, dotted).
+    border-color: sets the color of the border.
+    border-radius: rounds the corners of the border.
+    to give a general border overall we use the border property alone{
+        border: sets the width, style, and color of the border in one declaration.
+        border:10px solid white;
+    }sotions 
+    positions>>refers to the way content is structured in the html document and how it is displayed on the page{
+        by default the position of an element is static which means it is positioned according to the normal flow of the document.
+        relative>>this refers to the position of an element relative to its normal position in the document flow.
+        absolute>>this refers to the position of an element relative to its nearest positionedancestor or parent
+        sticky>>this refers to the position of an element that toggles between relative and fixed positioning based on the user's 
+        scroll position due to break points (eg navigation headers).
+    }
+display>>this refers to the way an element is displayed on the page{
+    block: displays an element as a block-level element, taking up the full width available.
+    inline: displays an element as an inline element, allowing it to flow with text.has limited flexibility in terms of width and height.
+    inline-block: combines the characteristics of both block and inline elements, allowing for width and height settings.
+    none: hides an element from the page, removing it from the document flow.(this is crucial in designing a responsive design where we have to hide components 
+    )
+}
+flex>>this refers to a layout model that allows for flexible and responsive designs by distributing space along a single axis (row or column) {
+    display: flex; sets the element as a flex container.
+    flex-direction: defines the direction of the flex items (e.g., row, column).>>reverse-column and reverse-row
+    justify-content: aligns flex items along the main axis (e.g., center, space-between).
+    align-items: aligns flex items along the cross axis (e.g., center, stretch).
+    flex-wrap: controls whether flex items wrap onto multiple lines.>>is also used in mobile responsiveness and it contains a reverse wrap as well 
+    flex-grow: defines how much a flex item should grow relative to the rest of the items.
+    flex-shrink: defines how much a flex item should shrink relative to the rest of the
+    flex-basis: sets the initial size of a flex item before any available space is distributed.
+}
