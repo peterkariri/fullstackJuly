@@ -23,3 +23,6 @@ console.log(thirdName);
 
 /* combining all this using concatenation(+) */
 console.log("My name is"+" "+firstName+" "+secondName+",I am "+age+" years old");
+
+
+
