@@ -56,3 +56,49 @@ console.log(phrase.includes("fox"));/////true
 console.log(phrase.startsWith("The"));/////true
 console.log(phrase.endsWith("?"));/////true
 //extracting string parts
+/* in extracting strings we use these following methods{
+    slice>>it takes in two parameters(starting index and ending index){
+        it extracts a section of a string and returns it as a new string without modifying the original string.
+        takes in a negative index for only the ending index.
+    }
+} */
+let newPhase=phrase.slice(4,-19);
+console.log(newPhase);
+/* 
+substring>>this refers to a method that extracts characters from a string between two specified indices and returns 
+them as a new string. Unlike slice, substring does not accept negative indices.It returns a 1 if given a negative index */
+
+
+let subPhase=phrase.substring(-6,-50)
+console.log(subPhase);
+/*
+substr>>this method extracts a part of a string, starting from a specified index and extending for a given number of characters.
+it takes in two parameters(starting index and length of the string to be extracted)
+it can take in negative index for only the starting index>>starts counting frm right side incase of a starting negative index
+*/
+let subStrPhase=phrase.substr(-19,15)
+console.log(subStrPhase);
+//replacing strings>>this refers to renaming a value in a stirng or using another value in place of the original value
+/* we use the replace method to conduct this functionality
+ */
+let newSentence="I like playing GTAfive and coding in every aspect also playing GTAfive and swimming is fun"
+
+let newHobby=newSentence.replaceAll("GTAfive","PES") //replace
+
+console.log(newHobby);
+console.log(newSentence);
+
+
+//trimming>>we use the trim method to remove whotespaces from strings at the beginning and end points
+let trimSentence="   hello world    "
+console.log(trimSentence);
+
+console.log(trimSentence.trim());
+  /* repeating()>>this method is used to repeat a targetted number of characters over
+   the specified amount of iterations 
+   inside the repeat function is where you store the repeating iteration count
+   */
+
+   let repeat=" i like coding\n"
+   console.log(repeat.repeat(10));
+   
