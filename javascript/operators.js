@@ -49,3 +49,4 @@ console.log(numberOne>=numberTwo);
 //less than or equal to operator
 console.log(numberOne<=numberTwo);
 //logical operators
+//assingment>>read on the different naming conventions in javascript
